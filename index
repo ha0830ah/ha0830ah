@@ -1,1 +1,35 @@
 
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>actor ha</title>
+  <link rel="icon" type="image/jpeg" href="hapro.jpeg">
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      min-height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      background:#ffffff;
+    }
+
+    img{
+      width:800px;
+      max-width:90vw;
+      height:auto;
+      display:block;
+    }
+  </style>
+</head>
+<body>
+  <img src="hapro.jpeg" alt="Actor Ha profile photo">
+</body>
+</html>
