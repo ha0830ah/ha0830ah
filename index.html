@@ -28,9 +28,8 @@
       background-color: #fffbf3;
       z-index: 1000;
       display: flex;
-      justify-content: center;
-      align-items: center;
       flex-direction: column;
+      align-items: center;
     }
 
     .nav {
@@ -49,32 +48,41 @@
       position: relative;
     }
 
-    /* 가운데 홈 아이콘 */
     .home-icon {
       width: 24px;
       height: 24px;
     }
 
-    /* 메뉴 아래 선 */
+    /* 🔥 메뉴 하단 라인 (여기서 px 조절 가능) */
     .nav-line {
-      width: 100%;
-      height: 5px;
+      width: 1500px;            /* ← 길이 조절 */
+      height: 3px;              /* ← 굵기(px) 조절 */
       background-color: #f83639;
+      margin: 0 auto;           /* 중앙 정렬 */
     }
 
-    /* 메인 이미지 영역 */
-    .hero {
-      margin-top: 100px; /* 헤더 높이만큼 여백 */
-      width: 100%;
-      height: calc(100vh - 100px);
+    /* 메인 컨텐츠 영역 */
+    .content {
+      margin-top: 120px;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+    }
+
+    /* 이미지 리스트 */
+    .image-list {
+      width: 900px;             /* 이미지 영역 폭 */
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
       align-items: center;
     }
 
-    .hero img {
-      max-width: 90%;
+    .image-list img {
+      width: 900px;
       height: auto;
+      display: block;
     }
 
   </style>
@@ -87,7 +95,6 @@
       <a href="#">Me</a>
       <a href="#">Drama</a>
 
-      <!-- 집 모양 SVG -->
       <svg class="home-icon" viewBox="0 0 24 24" fill="#f83639" xmlns="http://www.w3.org/2000/svg">
         <path d="M12 3L2 12h3v8h6v-5h2v5h6v-8h3L12 3z"/>
       </svg>
@@ -99,9 +106,29 @@
     <div class="nav-line"></div>
   </header>
 
-  <section class="hero">
-    <!-- 여기에 배우 메인 이미지 넣기 -->
-    <img src="your-image.jpg" alt="Ha Seungyeon">
+  <section class="content">
+
+    <div class="image-list">
+      <!-- GitHub raw 이미지 경로 사용 -->
+      <img src="https://raw.githubusercontent.com/ha0830ah/ha0830ah/main/images/p1.jpg">
+      <img src="https://raw.githubusercontent.com/ha0830ah/ha0830ah/main/images/p2.jpg">
+      <img src="https://raw.githubusercontent.com/ha0830ah/ha0830ah/main/images/p3.jpg">
+      <img src="https://raw.githubusercontent.com/ha0830ah/ha0830ah/main/images/p4.jpg">
+      <img src="https://raw.githubusercontent.com/ha0830ah/ha0830ah/main/images/p5.jpg">
+      <img src="https://raw.githubusercontent.com/ha0830ah/ha0830ah/main/images/p6.jpg">
+      <img src="https://raw.githubusercontent.com/ha0830ah/ha0830ah/main/images/p7.jpg">
+      <img src="https://raw.githubusercontent.com/ha0830ah/ha0830ah/main/images/p8.jpg">
+      <img src="https://raw.githubusercontent.com/ha0830ah/ha0830ah/main/images/p9.jpg">
+      <img src="https://raw.githubusercontent.com/ha0830ah/ha0830ah/main/images/p10.jpg">
+      <img src="https://raw.githubusercontent.com/ha0830ah/ha0830ah/main/images/p11.jpg">
+      <img src="https://raw.githubusercontent.com/ha0830ah/ha0830ah/main/images/p12.jpg">
+      <img src="https://raw.githubusercontent.com/ha0830ah/ha0830ah/main/images/p13.jpg">
+      <img src="https://raw.githubusercontent.com/ha0830ah/ha0830ah/main/images/p14.jpg">
+      <img src="https://raw.githubusercontent.com/ha0830ah/ha0830ah/main/images/p15.jpg">
+      <img src="https://raw.githubusercontent.com/ha0830ah/ha0830ah/main/images/p16.jpg">
+      <img src="https://raw.githubusercontent.com/ha0830ah/ha0830ah/main/images/p17.jpg">
+    </div>
+
   </section>
 
 </body>
